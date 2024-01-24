@@ -8,7 +8,7 @@ Before using the application, ensure you have the following:
 - Npcap Library installed on your system.
 - Compatible system with wxWidgets.
 - Visual Studio for development (if using the source code).
-- You can use de .exe to run the application
+
 
 ## Project Description
 This project aims to create a Network Intrusion Detection System (NIDS) capable of monitoring network traffic, capturing packets, and identifying potential threats. It provides a user-friendly interface to configure and observe real-time network activities.
