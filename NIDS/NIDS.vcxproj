@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c5ef5b8c-4433-41b1-8451-65543d2d7a28}</ProjectGuid>
+    <RootNamespace>NIDS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\lib\vc_x64_lib;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include\pcapplusplus;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\lib\vc_x64_lib;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include\pcapplusplus;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include\pcapplusplus;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\lib\vc_x64_lib;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include\pcapplusplus;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\lib\vc_x64_lib;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include;C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include\msvc;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Downloads\mysql-connector-c++-8.2.0-winx64\include\jdbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Common++.lib;Packet++.lib;Pcap++.lib;wpcap.lib;Packet.lib;kernel32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include;C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include\msvc;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Downloads\mysql-connector-c++-8.2.0-winx64\include\jdbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Common++.lib;Packet++.lib;Pcap++.lib;wpcap.lib;Packet.lib;kernel32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include;C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include\msvc;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Downloads\mysql-connector-c++-8.2.0-winx64\include\jdbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Common++.lib;Packet++.lib;Pcap++.lib;wpcap.lib;Packet.lib;kernel32.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>STATIC_CONCPP;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include;C:\Users\Romain\Desktop\projet_wx\wxWidgets-3.2.4\include\msvc;C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Include;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\include;C:\Users\Romain\Downloads\mysql-connector-c++-8.2.0-winx64\include\jdbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Romain\Desktop\projet_wx\npcap-sdk-1.13\Lib\x64;C:\Users\Romain\Desktop\projet_wx\pcapplusplus-23.09-windows-vs2022-x64-release\lib;C:\Users\Romain\Downloads\mysql-connector-c++-8.2.0-winx64\lib64\vs14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Common++.lib;Packet++.lib;Pcap++.lib;wpcap.lib;Packet.lib;kernel32.lib;Ws2_32.lib;mysqlcppconn-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Graphique.cpp" />
+    <ClCompile Include="Header_NIDS.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Capture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyFrame.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
